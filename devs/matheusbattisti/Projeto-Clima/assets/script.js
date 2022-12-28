@@ -1,22 +1,9 @@
 // OpenWeather API
 // CountryFlag API
 // Unplash API
-const fs = require('fs')
-const path = require('path')
-
-// Lendo arquivo usando promise
-// (Fazendo exercicio do curso Web Moderno do cod3r)
-function lerArquivo(caminho) {
-    return new Promise(resolve => {
-        fs.readFile(caminho, (e, conteudo) => {
-            resolve(conteudo.toString())
-        })
-    })
-}
-const caminho = path.join(__dirname, 'key.txt')
 
 // Variáveis e Seleção de Elementos
-const apiKey = lerArquivo(caminho)
+const apiKey = process.env.OPENWEATHER_KEY
 const apiCountryURL = 'https://countryflagsapi.com/png/'
 const apiUnplash = 'https://source.unsplash.com/1600x900/?'
 
