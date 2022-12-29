@@ -1,9 +1,10 @@
 // OpenWeather API
 // CountryFlag API
 // Unplash API
+import TOKEN from './key'
 
 // Variáveis e Seleção de Elementos
-const apiKey = process.env.OPENWEATHER_KEY
+const apiKey = TOKEN
 const apiCountryURL = 'https://countryflagsapi.com/png/'
 const apiUnplash = 'https://source.unsplash.com/1600x900/?'
 
