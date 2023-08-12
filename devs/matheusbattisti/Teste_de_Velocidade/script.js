@@ -25,15 +25,33 @@ loadTheme()
 
 const textos = [
     'Exemplo de texto para digitar.',
-    'Outro exemplo de tempo para digitar.',
+    'Outro exemplo de texto para digitar.',
     'Mais um exemplo de texto para digitar.',
     'Digite isso.',
     'Você pode digitar isso aqui.'
 ]
 
+const trava_linguas = [
+    'Num ninho de mafagafos há sete mafagafinhos. Quando a mafagafa gafa, gafam os sete mafagafinhos.',
+    'Trazei três pratos de trigo para três tigres tristes comerem.',
+    'A aranha arranha a rã. A rã arranha a aranha. Nem a aranha arranha a rã. Nem a rã arranha a aranha.',
+    'O tempo perguntou ao tempo quanto tempo o tempo tem, o tempo respondeu ao tempo que o tempo tem o tempo que o tempo tem.',
+    'Se percebeste, percebeste. Se não percebeste, faz que percebeste para que eu perceba que tu percebeste. Percebeste?',
+    'Em rápido rapto, um rápido rato raptou três ratos sem deixar rastros.',
+    'Bagre branco, branco bagre.',
+    'Teto sujo, chão sujo.',
+    'Caixa de graxa grossa de graça.',
+    'A vaca malhada foi molhada por outra vaca molhada e malhada.',
+    'Fia, fio a fio, fino fio, frio a frio.',
+    'O desinquivincavacador das caravelarias desinquivincavacaria as cavidades que deveriam ser desinquivincavacadas.',
+    'Fala, arara loura. A arara loura falará.'
+]
+
 const novoTexto = () => {
-    const index = Math.floor(Math.random() * textos.length)
-    texto.textContent = textos[index]
+    const fusao = textos.concat(trava_linguas)
+    const index = Math.floor(Math.random() * fusao.length)
+   
+    texto.textContent = fusao[index]
 }
 novoTexto()
 
